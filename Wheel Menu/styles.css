@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Header-Container {
+  text-align: center;
+  background-color: #D3D3D3;
+  height: 15vmin;
+  margin: 0;
+}
+
+.Header-Container h1 {
+  padding: 10px;
+  font-size: 3.5em;
+}
+
+.Container {
+  position: relative;
+  width: 90%;
+  height: 75px;
+  margin: 75px auto;
+  border: 1px solid black;
+}
+
+.Circle-Container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 6%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-transition: 0.2s cubic-bezier(0.74, 1.13, 0.83, 1.2);
+  transition: 0.2s cubic-bezier(0.74, 1.13, 0.83, 1.2);
+}
+
+.animate:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#part1,
+#part3,
+#part5 {
+  background-color: #a9a9a9;
+}
+
+#part2,
+#part4,
+#part6 {
+  background-color: #dcdcdc;
+}
+
+#part1 {
+  -webkit-clip-path: polygon(50% 50%, 100% 20%, 100% 0%, 50% 0%);
+          clip-path: polygon(50% 50%, 100% 20%, 100% 0%, 50% 0%);
+}
+
+#part1 strong {
+  position: fixed;
+  right: 75px;
+  top: 60px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#part2 {
+  -webkit-clip-path: polygon(50% 50%, 100% 20%, 100% 50%, 100% 85%);
+          clip-path: polygon(50% 50%, 100% 20%, 100% 50%, 100% 85%);
+}
+
+#part2 strong {
+  position: fixed;
+  right: 30px;
+  top: 140px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#part3 {
+  -webkit-clip-path: polygon(50% 50%, 50% 100%, 100% 100%, 100% 84%);
+          clip-path: polygon(50% 50%, 50% 100%, 100% 100%, 100% 84%);
+}
+
+#part3 strong {
+  position: fixed;
+  right: 75px;
+  bottom: 60px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#part4 {
+  -webkit-clip-path: polygon(50% 50%, 0% 84%, 0% 100%, 50% 100%);
+          clip-path: polygon(50% 50%, 0% 84%, 0% 100%, 50% 100%);
+}
+
+#part4 strong {
+  position: fixed;
+  left: 75px;
+  bottom: 60px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#part5 {
+  -webkit-clip-path: polygon(50% 50%, 0% 17%, 0% 50%, 0% 84%);
+          clip-path: polygon(50% 50%, 0% 17%, 0% 50%, 0% 84%);
+}
+
+#part5 strong {
+  position: fixed;
+  left: 30px;
+  top: 140px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#part6 {
+  -webkit-clip-path: polygon(50% 50%, 51% 0%, 0% 0%, 0% 17%);
+          clip-path: polygon(50% 50%, 51% 0%, 0% 0%, 0% 17%);
+}
+
+#part6 strong {
+  position: fixed;
+  left: 75px;
+  top: 60px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.Select1 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
+          transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.Select1 #part1 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select1 #part2 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select1 #part3 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select1 #part4 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select1 #part5 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select1 #part6 strong {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.Select2 #part1 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #part2 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #part3 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #part4 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #part5 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select2 #part6 strong {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(-60deg);
+          transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.Select3 #part1 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #part2 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #part3 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #part4 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #part5 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select3 #part6 strong {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(-120deg);
+          transform: translate(-50%, -50%) rotate(-120deg);
+}
+
+.Select4 #part1 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #part2 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #part3 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #part4 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #part5 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select4 #part6 strong {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(-180deg);
+          transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.Select5 #part1 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #part2 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #part3 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #part4 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #part5 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select5 #part6 strong {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #Menu {
+  -webkit-transform: translate(-50%, -50%) rotate(-240deg);
+          transform: translate(-50%, -50%) rotate(-240deg);
+}
+
+.Select6 #part1 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #part2 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #part3 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #part4 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #part5 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Select6 #part6 strong {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Toggle .hide {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 50%;
+}
+
+.Toggle .Menu-Circle {
+  top: 50%;
+}
+
+.Menu-Circle {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fffaf0;
+  border-radius: 50%;
+  border: 3px solid black;
+  left: 6%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(55%, 300%);
+          transform: translate(55%, 300%);
+}
+
+.change #bar1 {
+  -webkit-transform: rotate(45deg) translate(35px, 8px);
+          transform: rotate(45deg) translate(35px, 8px);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+
+.change #bar2 {
+  opacity: 0;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+
+.change #bar3 {
+  -webkit-transform: rotate(-45deg) translate(8px, 20px);
+          transform: rotate(-45deg) translate(8px, 20px);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Menu</title>
+  </head>
+  <body>
+    <header class="Header-Container"">
+      <h1>Menu Design</h1>
+    </header>
+
+
+    <div id="Nav" class="Container Toggle">
+      <div class="Circle-Container hide" id="Menu">
+        <div onClick="rotateMenu(this)" id="part1" class="circle animate">
+          <strong class="Menu-text">Menu 6</strong>
+        </div>
+        <div onClick="rotateMenu(this)" id="part2" class="circle animate">
+          <strong class="Menu-text">Menu 1</strong>
+        </div>
+        <div onClick="rotateMenu(this)" id="part3" class="circle animate">
+          <strong class="Menu-text">Menu 2</strong>
+        </div>
+        <div onClick="rotateMenu(this)" id="part4" class="circle animate">
+          <strong class="Menu-text">Menu 3</strong>
+        </div>
+        <div onClick="rotateMenu(this)" id="part5" class="circle animate">
+          <strong class="Menu-text">Menu 4</strong>
+        </div>
+        <div onClick="rotateMenu(this)" id="part6" class="circle animate">
+          <strong class="Menu-text">Menu 5</strong>
+        </div>
+      </div>
+
+      <div onClick="toggleMenu(this)" class="Menu-Circle">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function rotateMenu(x) {
+      if (x.id == "part1") {
+        $("#Nav").addClass("Select1");
+        $("#Nav").removeClass("Select6");
+        $("#Nav").removeClass("Select2");
+        $("#Nav").removeClass("Select3");
+        $("#Nav").removeClass("Select4");
+        $("#Nav").removeClass("Select5");
+      }
+
+      if (x.id == "part2") {
+        $("#Nav").addClass("Select2");
+        $("#Nav").removeClass("Select1");
+        $("#Nav").removeClass("Select6");
+        $("#Nav").removeClass("Select3");
+        $("#Nav").removeClass("Select4");
+        $("#Nav").removeClass("Select5");
+      }
+
+      if (x.id == "part3") {
+        $("#Nav").addClass("Select3");
+        $("#Nav").removeClass("Select1");
+        $("#Nav").removeClass("Select2");
+        $("#Nav").removeClass("Select6");
+        $("#Nav").removeClass("Select4");
+        $("#Nav").removeClass("Select5");
+      }
+
+      if (x.id == "part4") {
+        $("#Nav").addClass("Select4");
+        $("#Nav").removeClass("Select1");
+        $("#Nav").removeClass("Select2");
+        $("#Nav").removeClass("Select3");
+        $("#Nav").removeClass("Select6");
+        $("#Nav").removeClass("Select5");
+      }
+
+      if (x.id == "part5") {
+        $("#Nav").addClass("Select5");
+        $("#Nav").removeClass("Select1");
+        $("#Nav").removeClass("Select2");
+        $("#Nav").removeClass("Select3");
+        $("#Nav").removeClass("Select4");
+        $("#Nav").removeClass("Select6");
+      }
+
+      if (x.id == "part6") {
+        $("#Nav").addClass("Select6");
+        $("#Nav").removeClass("Select1");
+        $("#Nav").removeClass("Select2");
+        $("#Nav").removeClass("Select3");
+        $("#Nav").removeClass("Select4");
+        $("#Nav").removeClass("Select5");
+      }
+    }
+
+    function toggleMenu(x) {
+      $("#Nav").toggleClass("Toggle");
+      x.classList.toggle("change");
+    }
+  </script>
+</html>
